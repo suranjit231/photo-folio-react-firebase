@@ -1,0 +1,169 @@
+.photoListContainer{
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.photoListHeaderSec{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-around;
+}
+
+
+
+.photoListHeaderSec {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.photoListWrapper {
+    display: grid;
+    gap: 12px;
+    width: 80%;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+  
+  .photoBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    position: relative;
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.4s ease-in-out;
+    perspective: 10000px;
+  }
+
+  .photoBox:hover{
+    transform: scale(1.1);
+    transform-style: preserve-3d;
+  }
+  
+  .image {
+    width: 100%;
+    padding-top: 70%; 
+    position: relative;
+    overflow: hidden;
+    height: 1;
+    
+  }
+  
+  .image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    
+  }
+
+  .addImageBtn{
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 700;
+    color: antiquewhite;
+    background-color: rgb(10, 43, 10);
+  }
+  
+
+  .clear{
+    padding: 5px 10px;
+    background-color: red;
+    color: antiquewhite;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 700;
+  }
+
+  .backBtn{
+    width: 40px;
+    cursor: pointer;
+  }
+
+  .backBtn img{
+    width: 100%;
+  }
+
+  .photoHeadPara{
+    font-size: 22px;
+    font-weight: 600;
+    color: #250250;
+  }
+
+
+  .hoverControlBox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 0;
+    right:-10px;
+    transform: translateY(-50%);
+    
+  }
+
+  .deleteBtn, .editBtn{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    
+   
+  }
+
+  .deleteBtn img, .editBtn img{
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+  }
+
+  @media screen and (max-width: 576px) {
+    .photoListHeaderSec {
+      display: flex;
+      align-items: center;
+      width: 90%;
+      justify-content: space-between;
+  }
+
+  .photoListWrapper{
+    width: 100%;
+  }
+
+  .photoListWrapper{
+    font-size: 18px;
+  }
+
+  .caroselContainer {
+    top: 20%;
+    height: 150px;
+    width: 60%;
+}
+
+.backBtn{
+  width: 26px;
+}
+
+
+    
+  }
+
+
+  @media screen and (max-width: 350px) {
+    .backBtn{
+      width: 22px;
+    }
+  }

@@ -1,0 +1,27 @@
+ <form className={styles.photoForm} onSubmit={handleAddPhotoFormSubmit}>
+        <h2>Add a photo</h2>
+        <div className={styles.formControlDiv}>
+          <input
+            type="text"
+            name="title"
+            value={photoData.title}
+            placeholder="Title..."
+            onChange={(e) => setPhotoData({ ...photoData, title: e.target.value })}
+          />
+        </div>
+        <div className={styles.formControlDiv}>
+          <input
+            type="text"
+            name="imageUrl"
+            value={photoData.imageUrl}
+            placeholder="Image URL..."
+            onChange={(e) => setPhotoData({ ...photoData, imageUrl: e.target.value })}
+          />
+        </div>
+        <div className={styles.buttonDiv}>
+          <button type="reset" className={styles.clearBtn} onClick={() => setPhotoData({ title: "", imageUrl: "" })}>
+            Clear
+          </button>
+          <button className={styles.addPhotoBtn}>Add</button>
+        </div>
+      </form>

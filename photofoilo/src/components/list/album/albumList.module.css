@@ -1,0 +1,153 @@
+.albumListContainer{
+    width: 100%;
+    height: auto;
+    min-height: 200px;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.albumListWrapper{
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 10px;
+}
+
+.albumListHeader{
+    display: flex;
+    /* border: 1px solid yellow; */
+    justify-content: space-between;
+    align-items: center;
+
+    
+}
+
+.albumListHeader h3{
+    color: rgb(1, 1, 53);
+}
+
+.albumFormToggleBtn{
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: linear-gradient(90deg, rgba(251,62,91,0.804359243697479) 35%, rgba(255,239,0,0.9136029411764706) 100%);
+    color: aliceblue;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.albumFormToggleBtn:hover{
+    background: linear-gradient(90deg, rgba(251,62,91,0.9920343137254902) 35%, rgba(255,239,0,0.9808298319327731) 100%);
+}
+
+.albumBoxWrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+
+.albumForm{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  
+}
+
+.albumForm form{
+    width: 40%;
+    height: 80px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    background-color:rgba(50, 50, 93, 0.25) ;
+}
+
+.albumFormHead{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6fI3579gup0weRQImPH8TAmQNwyUKofrZmyfBfXiy7oxSwy9iEBpCQ0DHLg&s);
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.formControlDiv{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.formControlDiv input{
+    flex: 1;
+    padding: 5px 10px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+}
+
+.formControlDiv input:focus{
+    border: 2px solid rgb(33, 200, 212);
+}
+
+.buttonDiv{
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   gap: 10px;
+    
+}
+
+.buttonDiv button{
+    padding: 4px 12px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.addAlbumBtn{
+    background: linear-gradient(90deg, rgba(31,24,237,0.9920343137254902) 35%, rgba(158,0,255,0.9808298319327731) 100%);
+}
+
+.clearBtn{
+    background: linear-gradient(90deg, rgba(237,192,24,0.9920343137254902) 7%, rgba(255,0,0,0.9808298319327731) 28%);
+}
+
+
+@media screen and (max-width: 770px) {
+    .albumForm form{
+        width: 70%;
+        height: 100px;
+        padding: 16px;
+        gap: 10px;
+
+    }
+}
+
+
+@media screen and (max-width: 576px){
+    .albumForm form{
+        width: 90%;
+    }
+}
+

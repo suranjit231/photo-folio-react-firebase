@@ -1,0 +1,30 @@
+.navContainer{
+    display: flex;
+    padding-left: 50px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(14,9,121,1) 35%, rgba(255,25,0,1) 100%);
+
+}
+
+.leftNavbar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navLogo{
+    width: 40px;
+    height: 40px;
+}
+
+.navLogo img{
+    width: 100%;
+    height: 100%;
+   
+}
+
+.logoTitle{
+    font-size: 18px;
+    font-weight: 500;
+    font-style: italic;
+    color: aliceblue;
+}
